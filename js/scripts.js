@@ -21,8 +21,8 @@ const randomNumbers = [];
 // console.log('numero array' ,randomNumbers)
 for (let i = 0; i < 16; i++) {
   // Genero un numero casuale
-  let bomb = generateRandomNumber(1, 16);
-  // console.log(bomb);
+  let bomb = generateRandomNumber(1, 100);
+  console.log(bomb);
 
   // Controllo se questo numero appena generato è già presente nell'array
   let foundInArray = randomNumbers.includes(bomb);
@@ -37,6 +37,7 @@ for (let i = 0; i < 16; i++) {
 
   // console.log(randomNumbers);
 }
+
 let counter = 0;
 
 button.addEventListener('click', function() {
